@@ -1,0 +1,29 @@
+# Environment "qwenvl"; see doc/installation.md.
+# The torch pins resolve to the default CUDA build; pass --index-url for a
+# specific CUDA version (the paper's runs used the CUDA 12.1 build of torch 2.3.1).
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+transformers==4.44.2
+transformers_stream_generator==0.0.5
+accelerate
+tiktoken
+einops
+sentencepiece
+pillow
+
+# MiniCPM-o audio modules, imported by its trust_remote_code files at load time
+librosa==0.9.0
+soundfile==0.12.1
+vocos==0.1.0
+vector-quantize-pytorch==1.18.5
+
+# data preparation + evaluation
+numpy
+pandas
+tqdm
+nltk==3.9.2
+requests
+string2string
+huggingface_hub
+git+https://github.com/openai/CLIP.git

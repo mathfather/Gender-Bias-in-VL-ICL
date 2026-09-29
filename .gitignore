@@ -1,0 +1,30 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments / editors
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Model weights: download via utils/download_huggingface_model.py (see doc/models.md)
+models/**
+!models/.gitkeep
+!models/README.md
+
+# Data: downloads and built splits stay untracked (see doc/datasets.md); only the
+# READMEs and .gitkeep placeholders are tracked
+data/**
+!data/**/
+!data/**/README.md
+!data/**/.gitkeep
+
+# Experiment outputs
+results/**
+!results/.gitkeep
+summary/**
+!summary/.gitkeep

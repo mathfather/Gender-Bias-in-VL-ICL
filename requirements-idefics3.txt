@@ -1,0 +1,25 @@
+# Environment "idefics3"; see doc/installation.md.
+# torch 2.3.1 brings triton 2.3.1; the MXFP4 kernels of the GPT-OSS-20B judge need
+# triton>=3.4 and the `kernels` package.
+torch==2.3.1
+torchvision==0.18.1
+transformers[torch]==4.57.1
+accelerate
+timm
+einops
+tiktoken
+sentencepiece
+pillow
+
+# GPT-OSS-20B judge
+openai-harmony
+
+# data preparation + evaluation
+numpy
+pandas
+tqdm
+nltk==3.9.2
+requests
+string2string
+huggingface_hub
+git+https://github.com/openai/CLIP.git
